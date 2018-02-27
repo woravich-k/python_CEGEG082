@@ -25,7 +25,7 @@ def pointOnLine (px,py,x1,y1,x2,y2):
 
     if abs((x2-x1)*(py-y1)-(px-x1)*(y2-y1)) < 10**-7: #check if the slope of p to an end point is equal to slope of given line or not
 #using 10**-7 incase of facing with the absolute zero issue.
-        if (px-x1)*(px-x2) <= 0: #check if px is between x1 or x2 or not
+        if (px-x1)*(px-x2) < 0: #check if px is between x1 or x2 or not
             return True
     return False
 
